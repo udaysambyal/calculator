@@ -1,4 +1,3 @@
-
 import tkinter
 from tkinter import *
 
@@ -222,52 +221,3 @@ btn4.pack(side = LEFT, expand =True, fill = "both")
 btn4.bind("<Button-1>",click)
 
 root.mainloop()
-
-
-'''
-import tkinter
-from tkinter import *
-master = Tk()
-
-# Create this method before you create the entry
-def return_entry():
-    """Gets and prints the content of the entry"""
-    content = entry.get()
-    print(content)  
-
-Label(master, text="Input: ").grid(row=0, sticky=W)
-
-entry = Entry(master)
-entry.grid(row=0, column=1)
-
-# Connect the entry with the return button
-#entry.bind('<Return>', return_entry)
-button=Button(text="Click",command=return_entry).grid(row=1,sticky=W)
-
-
-mainloop()
-'''
-
-'''
-import tkinter as tk
-from tkinter import *
-
-window=tk.Tk()
-#greet=tk.Label(text="Welcome")
-#greet.pack()
-#window.mainloop()
-def command():
-    print(name)
-greet=tk.Label(window,text="Welcome").grid(row=0,column=0)
-e1=tk.Entry().grid(row=0,column=1)
-name = e1.get()
-
-greet2=tk.Label(window,text="Name").grid(row=1,column=0)
-e2=tk.Entry().grid(row=1,column=1)
-
-b1=tk.Button(window,text="Click Me",bg='red',fg='yellow',command=command).grid(row=2,column=1)
-
-
-window.mainloop()
-
-'''
